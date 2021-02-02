@@ -9,7 +9,7 @@ ftk = y(:,2);
 % OBS: nesse codigo foi usado um periodo de 4s para testar o codigo
 
 %T = 4; %valor de teste
-indice = find(tk == T); %pegando apenas o primeiro periodo
+indice = find(tk >= T); %pegando apenas o primeiro periodo
 
 %H = tk(end)-tk(1)
 %T = p*H 
@@ -32,5 +32,5 @@ for n=1:N %calculando coeficientes da serie de fourier
     cf = [cf cn];
     fif = [fif fin];
 end
-c = [a0 cf]
-fi = [fif]
+c = [a0 cf];
+fi = [fif];
