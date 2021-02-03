@@ -19,6 +19,13 @@ for n=1:N
 end
 yinf = (1/N)*res;
 
+% indices = find(ys < yinf); %pontos nos quais y < yinf
+% i = indices(end);
+
+% tr = ti(1);
+% ind2 = find(ys < ys(indice(1)));
+% ti = ts(ind2); yi = ys(ind2);
+
 b = [];
 for i=1:length(ytt)
     b = [b log(yinf/(yinf - ytt(i)))];
